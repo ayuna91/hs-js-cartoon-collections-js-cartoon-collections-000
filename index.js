@@ -1,7 +1,10 @@
+//['sleepy', 'sneezy', 'grumpy', 'dog']
+// ['sleepy', 'sneezy']
+
 function dwarfRollCall(dwarves){
   var counter = 1;
   var newArray =[];
-  for(let i=0; i< dwarves.length; i++){
+  for(let i=0; i< dwarves.length/2; i++){
     newArray.push(`${counter}. ${dwarves[i]} `)
     counter++;
   }
@@ -51,3 +54,21 @@ function findTheCheese(food){
        return result;
      }
 }
+
+// ['al', 'bob', 'betty']
+//['bob', 'betty']
+
+function wordsWithB(words){
+  var newArray = [];
+  for(let i=0; i< words.length; i++){
+    if(words[i].startsWith('b')  ){
+      newArray.push(`${words[i]}`)
+    }
+  }
+  return newArray;
+}
+
+
+
+
+
